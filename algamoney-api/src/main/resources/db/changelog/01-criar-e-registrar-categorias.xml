@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+
+    <changeSet id="1" author="Fagner" failOnError="false">
+        <comment>TABELA CATEGORIA</comment>
+        <createTable tableName="CATEGORIA">
+            <column name="CODIGO" type="BIGINT" autoIncrement="true">
+                <constraints nullable="false" unique="true" primaryKey="true"/>
+            </column>
+            <column name="NOME" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+
+        <modifySql dbms="mysql">
+            <append value="ENGINE=INNODB CHARSET=UTF8 "/>
+        </modifySql>
+    </changeSet>
+
+    <changeSet id="2" author="Fagner">
+        <comment>INSERTS TABELA CATEGORIA</comment>
+        <insert tableName="CATEGORIA">
+            <column name="NOME" value="LAZER"></column>
+        </insert>
+
+        <insert tableName="CATEGORIA">
+            <column name="NOME" value="ALIMENTAÇÃO"></column>
+        </insert>
+
+        <insert tableName="CATEGORIA">
+            <column name="NOME" value="SUPERMERCADO"></column>
+        </insert>
+
+        <insert tableName="CATEGORIA">
+            <column name="NOME" value="FARMÁCIA"></column>
+        </insert>
+
+        <insert tableName="CATEGORIA">
+            <column name="NOME" value="OUTROS"></column>
+        </insert>
+    </changeSet>
+
+    <!--<changeSet id="01" author="hhimanshu">
+        <createTable tableName="books"
+                     remarks="A table to contain all books">
+            <column name="id" type="int">
+                <constraints nullable="false" unique="true" primaryKey="true"/>
+            </column>
+            <column name="name" type="varchar(255)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="author" type="int">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="authors"
+                     remarks="A table to contain all the authors">
+            <column name="id" type="int">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="name" type="varchar(100)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addForeignKeyConstraint baseTableName="books" baseColumnNames="author"
+                                 constraintName="author_fk"
+                                 referencedTableName="authors" referencedColumnNames="id"/>
+    </changeSet>-->
+</databaseChangeLog>
