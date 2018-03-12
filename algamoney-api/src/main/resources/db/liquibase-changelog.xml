@@ -6,5 +6,6 @@
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
 
     <include file="classpath:db/changelog/01-criar-e-registrar-categorias.xml"/>
+    <include file="classpath:db/changelog/02-criar-tabela-pessoa.xml"/>
 
 </databaseChangeLog>
