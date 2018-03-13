@@ -20,7 +20,7 @@ class Endereco {
    @Size(min = 5, max = 80)
    private String bairro;
 
-   @Size(min = 8, max = 10)
+   @Size(min = 8, max = 30)
    private String cep;
 
    @Size(min = 5, max = 60)

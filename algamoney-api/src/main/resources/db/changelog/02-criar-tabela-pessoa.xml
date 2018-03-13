@@ -22,7 +22,7 @@
         <column name="NUMERO" type="VARCHAR(15)"/>
         <column name="COMPLEMENTO" type="VARCHAR(50)"/>
         <column name="BAIRRO" type="VARCHAR(80)"/>
-        <column name="CEP" type="VARCHAR(10)"/>
+        <column name="CEP" type="VARCHAR(30)"/>
         <column name="CIDADE" type="VARCHAR(60)"/>
         <column name="ESTADO" type="VARCHAR(60)"/>
     </createTable>

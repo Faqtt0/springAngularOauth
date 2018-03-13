@@ -24,7 +24,7 @@ public class PessoaResource {
 
         URI uri = ServletUriComponentsBuilder.fromCurrentRequestUri().path("/{codigo}")
                 .buildAndExpand(pessoaSalva.getCodigo()).toUri();
-        response.setHeader("Location", uri.toASCIIString());
+        //response.setHeader("Location", uri.toASCIIString());
 
         return ResponseEntity.created(uri).body(pessoaSalva);
     }
