@@ -8,4 +8,5 @@
     <include file="classpath:db/changelog/01-criar-e-registrar-categorias.xml"/>
     <include file="classpath:db/changelog/02-criar-tabela-pessoa.xml"/>
     <include file="classpath:db/changelog/03-criar-tabela-lancamentos.xml"/>
+    <include file="classpath:db/changelog/04-tabela-usuario-e-inserts.xml"/>
 </databaseChangeLog>
