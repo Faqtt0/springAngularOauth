@@ -1,4 +1,4 @@
-package com.example.algamoney.api.config;
+package com.algamoneyapi.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -22,7 +22,7 @@ import org.springframework.security.oauth2.provider.expression.OAuth2MethodSecur
 @Configuration
 @EnableWebSecurity
 @EnableResourceServer
-@EnableGlobalMethodSecurity(prePostEnabled = true)
+@EnableGlobalMethodSecurity(prePostEnabled = true) //Habilitar segurança em cima dos métodos
 public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
 	@Autowired

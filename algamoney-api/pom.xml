@@ -106,7 +106,8 @@
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-jwt</artifactId>
         </dependency>
-		
+
+        <!--configuração utilizada para habilitar a configuração dos properties em desenvolvimento. Ver anotação na classe AlgamoneyApiProperty-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-configuration-processor</artifactId>
